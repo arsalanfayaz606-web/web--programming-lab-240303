@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Styling - Combined</title>
+
+    <!-- Internal CSS (includes what was originally in styles.css + internal CSS) -->
+    <style>
+        /* External CSS merged here */
+        h1 {
+            color: blue;
+            text-align: center; /* You can change this alignment as needed */
+        }
+
+        .paragraph {
+            font-size: 18px;
+            color: green;
+        }
+
+        /* Internal CSS */
+        h2 {
+            color: red;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- External CSS effect (now internal) -->
+    <h1>External CSS Example (Merged)</h1>
+
+    <!-- Internal CSS effect -->
+    <h2>Internal CSS Example</h2>
+
+    <!-- Inline CSS -->
+    <p class="paragraph" style="color: purple;">
+        This is an inline CSS example.
+    </p>
+
+</body>
+</html>
