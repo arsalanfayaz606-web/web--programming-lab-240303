@@ -1,42 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Styling - Combined</title>
-
-    <!-- Internal CSS (includes what was originally in styles.css + internal CSS) -->
-    <style>
-        /* External CSS merged here */
-        h1 {
-            color: blue;
-            text-align: center; /* You can change this alignment as needed */
-        }
-
-        .paragraph {
-            font-size: 18px;
-            color: green;
-        }
-
-        /* Internal CSS */
-        h2 {
-            color: red;
-        }
-    </style>
-
+    <link rel="stylesheet" href="style.css"
+  <title>Table, Links, and Images</title> 
 </head>
 <body>
-
-    <!-- External CSS effect (now internal) -->
-    <h1>External CSS Example (Merged)</h1>
-
-    <!-- Internal CSS effect -->
-    <h2>Internal CSS Example</h2>
-
-    <!-- Inline CSS -->
-    <p class="paragraph" style="color: purple;">
-        This is an inline CSS example.
-    </p>
-
+ <h1>website Information</h1>
+ <table border="1">
+ <tr>
+ <th>Name</th>
+ <th>Profile</th>
+ <th>Image</th>
+ </tr>
+ <tr>
+ <td>GOOGLE</td>
+ <td><a href="https://www.google.com/">Google link</a></td>
+ <td><img src="data:image/png;base64,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" alt="Flag
+Image"></td>
+ </tr>
+ </table>
 </body>
 </html>
